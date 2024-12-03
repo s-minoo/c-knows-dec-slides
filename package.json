@@ -10,5 +10,10 @@
     "devDependencies": {
         "@shower/cli": "^0.3.1",
         "prettier": "^3.3.3"
+    },
+    "dependencies": {
+        "@shower/core": "^3.3.0",
+        "@shower/material": "^2.5.1",
+        "@shower/ribbon": "^3.5.2"
     }
 }

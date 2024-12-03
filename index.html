@@ -15,457 +15,145 @@
 
   <body class="shower list">
     <header class="caption">
-      <h1>From streaming engines to mapping algebra</h1>
+      <h1>Research stay - Linköping</h1>
       <p>Sitt Min Oo</p>
     </header>
 
     <section class="slide clear">
-      <h2 class="title">A short background on me</h2>
-      <p>Ghent University</p>
-      <p>
-        <span class="highlight">KNoWS</span> -
-        <span class="highlight">KN</span>owledge
-        <span class="highlight">o</span>n <span class="highlight">W</span>eb
-        <span class="highlight">S</span>cale
-      </p>
-      <p>Mapping heterogeneous data to RDF graphs</p>
-      <div class="place right" style="padding-right: 100px">
+      <h2 class="title">The Fun Stuff</h2>
+      <p>Unexpectedly amazing weather</p>
+      <p>Beautiful walk to the campus</p>
+      <p class="mainpoint">Great lunch</p>
+      <p class="sub">Buffet</p>
+      <p class="sub">Cost as much as Resto Ardoyen (&plusmn; 2 EUR)</p>
+      <div class="place right" style="padding-right: 20px">
         <figure>
           <img
-            style="width: 200px"
-            src="./figures/profile.jpeg"
-            alt="Photo of Sitt Min Oo"
+            style="width: 400px"
+            src="./figures/walk-collage.jpg"
+            alt="A collage of photos taken on the walk to Linköping campus"
           />
         </figure>
-      </div>
-
-      <div
-        class="place bottom right"
-        style="display: flex; justify-content: flex-end; align-items: center"
-      >
-        <img src="./figures/imec.png" style="width: 10%; height: 10%" />
-        <img src="./figures/idlab.svg" style="width: 15%" />
-        <img src="./figures/ugent.png" style="width: 15%" />
       </div>
       <!-- Create your first slide -->
     </section>
 
     <section class="slide clear">
-      <div class="ribbon"></div>
-      <div class="toc">
-        <p class="highlight">
-          Introduction to data mapping to RDF graphs with RML
-        </p>
-        <p>Earlier works with RMLStreamer</p>
-        <p>
-          The problems with current approaches both language + implementations
-        </p>
+      <h2 class="title">Hiking or "hiking"?</h2>
+      <div class="next">
+        <p class="mainpoint">Min Oo's hike</p>
+        <p class="sub">In a park, amongst the nature, chill</p>
+        <p class="sub">Just walking</p>
+      </div>
+
+      <div class="next">
+        <p class="mainpoint">Olaf's hike</p>
+        <p class="sub">Amongst the nature, "chill"</p>
+        <p class="sub">Climbing + Vertigo inducing heights</p>
+      </div>
+
+      <div class="place right" style="padding-right: 20px">
+        <figure>
+          <img
+            style="width: 400px"
+            src="./figures/hike-collage.jpg"
+            alt="A collage of photos taken on the hike with Olaf's group"
+          />
+        </figure>
       </div>
     </section>
 
     <section class="slide clear">
-      <h2 class="title">
-        Generating RDF graphs from heterogeneous data sources
-      </h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center; padding-top: 50px"
-      >
-        <img width="90%" src="./figures/mappingprocess.png" />
+      <h2 class="title">A different kitchen</h2>
+      <p class="mainpoint">Around 10-15 in Semantic Web Group</p>
+      <p class="sub">Olaf's group: 5 people</p>
+      <p class="next mainpoint">Close supervision + Hands on</p>
+      <p class="next sub">1 - 1 meetings</p>
+      <p class="next sub">Bi-weekly group meetings (just like C-KNoWS)</p>
+    </section>
+
+    <section class="slide clear">
+      <h2 class="title">A different <em>literal</em> kitchen</h2>
+      <p class="mainpoint">A lot of sofa's</p>
+      <p class="next mainpoint">Fruit box (a lot of varieties)</p>
+      <p class="next mainpoint">Weekly fika</p>
+    </section>
+
+    <section class="slide clear">
+      <h2 class="title">Formalism or "Formalism"</h2>
+      <div class="next">
+        <p class="mainpoint">Min Oo's formalism</p>
+        <p class="sub">Introduces symbols but lack definitions</p>
+        <p class="sub">Descriptions of how things work</p>
+        <p class="sub">Pray for the best</p>
+      </div>
+      <div class="next">
+        <p class="mainpoint">Olaf's formalism</p>
+        <p class="sub">Symbols + definitions</p>
+        <p class="sub">Formalize down to the details</p>
       </div>
     </section>
 
     <section class="slide clear">
-      <h2 class="title">
-        Mapping engines are implemented based on a mapping language
-      </h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center"
-      >
-        <img width="70%" src="./figures/mapinglanguagedilemma.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">RDF Mapping Language (RML)</h2>
-      <p class="mainpoint">Triples Map</p>
-      <p class="sub">Subject Map: generates subject IRIs + Blanknodes</p>
-      <p class="sub">Predicate Map: generates predicate IRIs</p>
+      <h2 class="title">Example Min Oo's Source Operator</h2>
+      <p class="mainpoint">Source(C<sub>access</sub>, I)</p>
       <p class="sub">
-        Object Map: generates object IRIs + Blanknodes + Literals
+        C<sub>access</sub>: a metadata information on data source
       </p>
-      <p class="mainpoint">Supports multiple input data sources</p>
-      <p class="sub">CSV, JSON, XML, ...</p>
-      <p class="sub">Kafka, WebSockets, SQL Databases</p>
-      <p class="mainpoint">Turtle syntax</p>
-    </section>
+      <p class="sub">I: Iterator queries like JSONPath to extract data</p>
 
-    <section class="slide clear">
-      <h2 class="title">Example RML mapping document</h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center"
-      >
-        <img width="70%" src="./figures/rml_mapping.png" />
+      <div class="next">
+        <p class="mainpoint">What is C<sub>access</sub> really?</p>
+        <p class="sub">What is a "metadata"? (formally)</p>
+      </div>
+      <div class="next">
+        <p class="mainpoint">What is an Iterator really?</p>
+        <p class="sub">Dependent on C<sub>access</sub>?</p>
+        <p class="sub">Language?</p>
       </div>
     </section>
 
     <section class="slide clear">
-      <h2 class="title">Example Venue.json input</h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center; padding-top: 50px"
-      >
-        <img src="./figures/input_json.png" />
-      </div>
-    </section>
+      <h2 class="title">Example Olaf's Source Operator</h2>
+      <p class="mainpoint">Source<sup>(s,q,P)</sup></p>
+      <p class="sub">s: a data source (type, D)</p>
+      <p class="sub">q: a query expression</p>
+      <p class="sub">P: a map from attributes → query languages</p>
 
-    <section class="slide clear">
-      <h2 class="title">Example output N-Triples</h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center; padding-top: 100px"
-      >
-        <img src="./figures/output_nq.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <div class="ribbon"></div>
-      <div class="toc">
-        <p>Introduction to data mapping to RDF graphs with RML</p>
-        <p class="highlight">Earlier works with RMLStreamer</p>
-        <p>
-          The problems with current approaches both language + implementations
+      <div class="next">
+        <p class="mainpoint">What is a data source (type, D)?</p>
+        <p class="sub">
+          type: a tuple (D<sup>ds</sup>, D<sup>c1</sup>, D<sup>c2</sup>, L, L', eval,
+          eval', cast)
         </p>
+        <p class="sub">D: a concrete instance of dataset</p>
+        <p>...</p> 
       </div>
+
     </section>
 
     <section class="slide clear">
-      <h2 class="title">RMLStreamer-SISO: a streaming mapping engine</h2>
-      <div class="next">
-        <p class="highlight">Process records by records (streaming)</p>
-      </div>
-      <div class="next">
-        <p class="mainpoint">Dynamic window joins</p>
-      </div>
-      <div class="next">
-        <p class="sub">TCP congestion control algorithm applied to windows</p>
-      </div>
-      <div class="next">
-        <p class="sub">High throughput --> Shorter window</p>
-      </div>
-      <div class="next">
-        <p class="sub">Low throughput --> Longer window</p>
-      </div>
-
-      <div class="next">
-        <p class="mainpoint">ISWC 2022: Resource track</p>
-        <p class="sub">Covid :(</p>
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <div class="ribbon"></div>
-      <div class="toc">
-        <p>Introduction to data mapping to RDF graphs with RML</p>
-        <p>Earlier works with RMLStreamer</p>
-        <p class="highlight">
-          The problems with current approaches both language + implementations
-        </p>
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">RML lacks formal operational semantics</h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center"
-      >
-        <img width="70%" src="./figures/rml_mapping.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">
-        Current mapping engines are blackboxes with their own semantics
-      </h2>
-      <div
-        class="container"
-        style="align-items: center; justify-content: center"
-      >
-        <img width="80%" src="./figures/blackbox.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <figure class="place center">
-        <img
-          src="./figures/mappingengines.jpg"
-          alt="Mapping engines everywhere toystory meme"
-        />
-      </figure>
-    </section>
-
-    <section class="slide clear">
-      <div class="ribbon"></div>
-      <div class="toc">
-        <p class="highlight">Numerous attempts to introduce semantics</p>
-        <p>Eureka moment: an algebraic revelations</p>
-        <p>RMLWeaver-JS: an algebraic mapping engine</p>
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">My first attempt at introducing "semantics"</h2>
-      <div class="next">
-        <p class="mainpoint">Break existing engines down to components</p>
-        <ul>
-          <li class="sub">Source: generate data records</li>
-          <li class="sub">Preprocessing: transform/joins data records</li>
-          <li class="sub">Mapping: serialize data records to RDF Quads</li>
-          <li class="sub">Target: write RDF Quads to sink</li>
-        </ul>
-      </div>
-      <div class="next">
-        <p class="mainpoint">Submitted to ESWC 2023 symposium</p>
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <div
-        class="container"
-        style="align-items: center; justify-content: center; padding-top: 20px"
-      >
-        <img style="min-width: 120%" src="./figures/symposium_components.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <figure class="place center">
-        <img src="./figures/isthis.jpg" />
-      </figure>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">
-        Implement mapping engines according to proposed modular architecture
-      </h2>
-      <p class="next highlight">Functional mapping engine in Scala</p>
-      <p class="next highlight">Multi-threaded actor model engine in Rust</p>
-      <p class="next highlight">Client-side mapping engine in JavaScript</p>
-      <div class="next place right" style="padding-right: 50px">
+      <h2 class="title">Takeaway</h2>
+      <p class="mainpoint">Collab with experts in adjacent domains</p>
+      <p class="mainpoint next">Research stay at a different environment</p>
+      <p class="mainpoint next">Close supervision vs Open floor</p>
+      <p class="sub next">Year 1-2 close supervision</p>
+      <p class="sub next">Year 3-... open floor</p>
+      <p class="mainpoint next">Rigorous formal definitions</p>
+      <p class="mainpoint next">Need better food at Resto Ardoyen</p>
+      <div class="place right" style="padding-right: 100px">
         <figure>
-          <img width="350px" src="./figures/gottamakethemall.jpeg" />
+          <img
+            style="width: 200px"
+            src="./figures/takeaway.png"
+            alt="A takeawy.com icon"
+          />
         </figure>
       </div>
     </section>
 
-    <section class="slide clear">
-      <figure class="place center">
-        <img src="./figures/defeated.jpeg" />
-      </figure>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Encountered problems while implementing the engines</h2>
-      <p class="next mainpoint">Modular but not well-defined</p>
-      <p class="next sub">What/how/why of the components are undefined</p>
-      <p class="next mainpoint">Non-standardized internal data model</p>
-      <p class="next sub">Smallest data object is "undefined"</p>
-      <p class="next mainpoint">Components are still not "fine-grained"</p>
-      <p class="next sub">Join components handle windowing/renaming etc...</p>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Back to the drawing board</h2>
-      <p class="mainpoint">Identified 3 main "processes" in mapping workflow</p>
-      <p class="next sub">Querying: data fetching</p>
-      <p class="next sub">
-        Processing: data transformations (templating/average/summation)
-      </p>
-      <p class="next sub">Serializing: serializing to RDF graphs</p>
-    </section>
-
-    <section class="slide clear">
-      <p class="shout">Wait a minute...</p>
-    </section>
-    <section class="slide clear">
-      <p class="shout">Querying and Processing?</p>
-    </section>
-
-    <section class="slide clear">
-      <p class="shout">SPARQL already does that! SQL too!</p>
-    </section>
-
-    <section class="slide clear">
-      <div class="ribbon"></div>
-      <div class="toc">
-        <p>Numerous attempts to introduce semantics</p>
-        <p class="highlight">Eureka moment: an algebraic revelations</p>
-        <p>RMLWeaver-JS: an algebraic mapping engine</p>
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Let's try to use SPARQL Algebra</h2>
-      <p class="next mainpoint">Formal data model</p>
-      <p class="next sub">Solution mappings</p>
-      <p class="next mainpoint">Builtin functions</p>
-      <p class="next sub">Extend operator</p>
-      <p class="next mainpoint">Joining solution mappings</p>
-      <p class="next sub">Union operator</p>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">
-        But there's a catch in just reusing solution mappings
-      </h2>
-      <p class="next mainpoint">RML has Logical Targets</p>
-      <p class="next sub">Data sinks</p>
-      <p class="next sub">Files, Kafka topics, WebSockets</p>
-      <p class="next sub">Definable at Term Maps level</p>
-      <p class="next mainpoint">
-        Logical targets not supported in SPARQL Algebra
-      </p>
-    </section>
-
-    <section class="slide clear">
-      <p class="shout">Algebraic mapping tuples</p>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Definitions of mapping tuples (old! bad!)</h2>
-      <p class="next mainpoint">A fragment</p>
-      <p class="next sub"><var>f</var> &isin; <var>F</var></p>
-      <p class="next sub">a grouping of solution mappings &mu;</p>
-      <p class="next mainpoint">A mapping tuple</p>
-      <p class="next sub">&omega; : <var>F</var> &rarr; <var>&Omega;</var></p>
-      <p class="next sub">smallest data object</p>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Towards algebraic mapping operators</h2>
-      <p class="next highlight">Initial proposal of mapping tuples</p>
-      <p class="next mainpoint">A minimal set of algebraic mapping operators</p>
-      <p class="next sub">4 operators: Source, Project, Extend, Serialize</p>
-      <p></p>
-      <p class="next highlight">ISWC 2023: poster track</p>
-    </section>
-
-    <section class="slide clear">
-      <div
-        class="place center"
-        style="align-items: center; justify-content: center"
-      >
-        <img style="max-height: 500px" src="./figures/selfie.jpg" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <p class="shout">One last mapping engine...</p>
-    </section>
-
-    <section class="slide clear">
-      <div class="ribbon"></div>
-      <div class="toc">
-        <p>Numerous attempts to introduce semantics</p>
-        <p>Eureka moment: an algebraic revelations</p>
-        <p class="highlight">RMLWeaver-JS: an algebraic mapping engine</p>
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">RMLWeaver-JS: an algebraic mapping engine</h2>
-
-      <div class="place center" style="padding-right: 50px">
-        <figure>
-          <img width="250px" src="./figures/weaver.png" />
-        </figure>
-      </div>
-      <p class="place bottom" style="text-align: center">
-        ESWC 2024: Knowledge Graph Construction Challenge
-      </p>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Algebraic mapping plan as a DAG execution plan</h2>
-      <div
-        class="place center"
-        style="align-items: center; justify-content: center"
-      >
-        <img
-          style="margin-top: 100px"
-          src="./figures/algebra_mapping_plan.svg"
-        />
-      </div>
-    </section>
-    <section class="slide clear">
-      <h2 class="title">Performance challenge</h2>
-      <div class="container" style="column-gap: 200px; margin-top: 50px">
-        <div class="next" style="flex-grow: 2">
-          <p class="mainpoint">Metrics measured</p>
-          <p class="sub">CPU usage</p>
-          <p class="sub">Mem usage</p>
-          <p class="sub">Execution time</p>
-        </div>
-
-        <div class="next">
-          <p class="mainpoint">Competitions</p>
-          <p class="sub">FlexRML (C++)</p>
-          <p class="sub">RMLStreamer-SISO (Apache Flink)</p>
-          <p class="sub">Sansa (Apache Spark)</p>
-          <p class="sub">Mapping-templates (Apache Velocity)</p>
-        </div>
-      </div>
-    </section>
-    <section class="slide clear">
-      <div
-        class="place center"
-        style="align-items: center; justify-content: center"
-      >
-        <img style="max-height: 500px" src="./figures/flexvsweaver.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <div
-        class="place center"
-        style="align-items: center; justify-content: center"
-      >
-        <img style="max-height: 400px" src="./figures/medal.png" />
-      </div>
-    </section>
-
-    <section class="slide clear">
-      <h2 class="title">Papers</h2>
-
-      <div class="container" style="flex-direction: column;">
-        <div>
-          <a
-            href="https://link.springer.com/chapter/10.1007/978-3-031-19433-7_40"
-            target="_blank"
-            >RMLStreamer-SISO: An RDF Stream Generator from Streaming
-            Heterogeneous Data
-          </a>
-        </div>
-        <hr>
-        <div>
-          <a
-            href="https://s-minoo.github.io/ISWC2023_paper_412.pdf"
-            target="_blank"
-          >
-            Towards Algebraic Mapping Operators for Knowledge Graph Construction
-          </a>
-        </div>
-        <hr>
-        <div>
-          <a href="https://openreview.net/forum?id=UMQQegaha3" target="_blank">
-            RMLWeaver-JS: An algebraic mapping engine in the KGCW Challenge 2024
-          </a>
-        </div>
-      </div>
+    <section class="slide clear ">
+        <p class="shout"><q>Perfect 5/7 recommended</q> <em>-Min Oo</em></p>
     </section>
 
     <div class="progress"></div>
